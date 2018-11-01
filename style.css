@@ -8,16 +8,20 @@ body{
 .container{
 	width:1170px;
 	margin:0 auto;
+	max-height: 100px;
 }
 [class*="col-"]{
 	float:left;
 }
-
+.logo{
+	position:relative;
+	top:8px;
+}
 .col-md-3{
-	width:25%;
+	width:300px;
 }
 .col-md-6{
-	width:50%;
+	width:570px;
 }
 .row:after{
 	content:"";
@@ -29,68 +33,189 @@ body{
 	background-color: rgba(255,255,255,0.75);
 }
 .menu li{
-	width: 25%;
+	width: 140px;
+	top:25px;
 	float: left;
 	border-left: 1px solid #2c71b8;
 }
 .menu li:last-child{
 	border-right: 1px solid #2c71b8;
 }
-.menu li a{
-	display: block;
-	height: 50px;
+ul{
+	display:block;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+ul:after{
+	display:block;
+	content: "";
+	clear: both;
+	float:none;
+}
+ul.menu > li{
+	float: left;
+}
+ul.menu > li > a{
+	display:block;
 	line-height: 50px;
 	text-align: center;
 	color:#2c71b8;
 	text-decoration: none;
 	font-size: 21px;
 }
-.menu li a:hover{
+.menu > li:hover > a{
+	background-color: #2c71b8;
+	color:white;
+}
+ul.menu > li > a:hover{
 background-color: #2c71b8;
 color:white;
 }
+
+.arrow{
+	position: relative;
+	display: block;
+	transform: rotate(90deg);
+	bottom:23px;
+	left: 77px;
+	height: 0;
+size}
+ul.submenu  {
+	display:none;
+	position: absolute;
+	width:280px; 
+	height: 40px;
+	background-color:#2c71b8;	
+	border:none; 
+}
+@font-face{
+	font-family:MyriadProRegular;
+	src:url(/fonts/MyriadProRegular.eot);
+	font-weight: normal;
+	font-style: normal;
+}
+ul.submenu > li {
+	display:block;
+	width:280px; 
+	height: 40px;
+	border:none; 
+}
+ul.submenu > li > a{
+	display:block;
+	font-size: 21px;
+	font: MyriadProRegular;
+	width: 280px;
+	height: 40px;
+	padding-top: 10px;
+	padding-left:28px;
+	background-color:#2c71b8;
+	color:white;
+	text-align: left;
+	text-decoration: none;
+}
+.submenu li:last-child {
+	border:none;
+}
+
+ul.submenu > li > a:hover{
+background-color:rgba(255,255,255,0.75);
+color:#2c71b8;
+}
+
+ul.menu > li:hover > ul.submenu {
+	display:block;
+}
+input {outline:none;}
+input:focus::-webkit-input-placeholder { color:transparent; }
 .col-md-2{
-	width:66%;
+	width:230px;
 }
 .col-md-1{
-	width:33%;
+	width:70px;
 }
-.search-box{
-	position: relative;
-	
-}
-.search div{
+.searchbox {
+	display: line;
 	border: 1px solid #2c71b8;
-}
-.search{
-	position: absolute;
-	padding:0;
-	width: 100%;
-	right: 0;
-	left: 0;
-	margin: auto;
-	max-width: 300px;
+	width: 200px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top:5px;
+	height: 40px;
 }
 .input{
-	position:relative;
+	width: 200px;
 }
-.search_input{
-	padding-right: ;
-	display:block;
-	width:100%;
-	box-sizing: border-box !important;
-	padding-left: 19px;
-}
-.button{
-	position:absolute;
-	right: 4px;
-	width: 30px;
-	height: 30px;
-	margin:auto;
-	background-color: #2c71b8;
+.inputbox{
+	display: inline;
 	border:none;
+	width: 82.5%;
+	background: none;
+	min-height: 40px;
+	font-size: 21px;
+	font-family: Roboto sans-serif;
+	float:left;
 
 }
-.button:before{
-	content:url(images/search.png);
+::-webkit-input-placeholder {
+	color:#2c71b8;
+	text-indent: 19px;
+	text-transform: inherit;
 }
+
+.button{
+	border:1px solid #2c71b8;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-right:4px;
+	width: 30px;
+	height: 30px;
+	padding:0;
+	background-image: url(images/search.png);
+	background-color: #2c71b8;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.basket{
+	position: relative;
+	display:block;
+	float:left;
+	border:none;
+	background-color: white;
+	background-image: url(images/basket.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	margin-left:30px;
+	height: 40px;
+	width: 40px;
+	margin-top: 5px;
+}
+.basket input{
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	background-image: url(images/basket.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border: none;
+
+}
+.number{
+	position: absolute;
+	/*bottom:30px;
+	right:10px;*/
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #2c71b8;
+	color: white;
+	font-size: 14px;
+	font-family: 'Roboto';
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 20px;
+	top:-10px;
+	left:-10px;
+}
+
