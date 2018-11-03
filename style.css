@@ -38,24 +38,11 @@ body{
 	float: left;
 	border-left: 1px solid #2c71b8;
 }
+/*последний разделитель*/
 .menu li:last-child{
 	border-right: 1px solid #2c71b8;
 }
-ul{
-	display:block;
-	list-style: none;
-	margin:0;
-	padding:0;
-}
-ul:after{
-	display:block;
-	content: "";
-	clear: both;
-	float:none;
-}
-ul.menu > li{
-	float: left;
-}
+/*Стиль для ссылок меню (сабменю*/
 ul.menu > li > a{
 	display:block;
 	line-height: 50px;
@@ -64,14 +51,14 @@ ul.menu > li > a{
 	text-decoration: none;
 	font-size: 21px;
 }
-.menu > li > a:hover {
+/*Изменение цвета текста и фона при наведении на меню 
+Не пропадает  при переходе на ссылки сабменю
+*/
+.menu > li:hover > a{
+	background-color: #2c71b8;
 	color:white;
 }
-.menu > li:hover{
-	background-color: #2c71b8;
-}
-
-
+/*стиль для спецсимвола стрелки вниз*/
 .arrow{
 	position: relative;
 	display: block;
@@ -80,6 +67,8 @@ ul.menu > li > a{
 	left: 77px;
 	height: 0;
 size}
+
+/*Прячем сабменю (дисплей нон) + стиль всего сабменю*/
 ul.submenu  {
 	display:none;
 	position: absolute;
@@ -88,18 +77,23 @@ ul.submenu  {
 	background-color:#2c71b8;	
 	border:none; 
 }
+/*Шрифт для сабменю*/
 @font-face{
 	font-family:MyriadProRegular;
 	src:url(/fonts/MyriadProRegular.eot);
 	font-weight: normal;
 	font-style: normal;
 }
+/*пареметри для отображение сабменю 
+(без него отображаются в два столбика при ширине 280)
+*/
 ul.submenu > li {
 	display:block;
 	width:280px; 
 	height: 40px;
 	border:none; 
 }
+/*/* Оформление пунктов (ссылок) в сабменю*/
 ul.submenu > li > a{
 	display:block;
 	font-size: 21px;
@@ -113,13 +107,12 @@ ul.submenu > li > a{
 	text-align: left;
 	text-decoration: none;
 }
-.submenu li:last-child {
-	border:none;
-}
+/*смена цвета при наведении на пункты сабменю*/
 ul.submenu > li > a:hover{
 	background-color:rgba(255,255,255,0.75);
 	color:#2c71b8;
 }
+/*Отображаем сабменю при наведени на пункт меню*/
 ul.menu > li:hover > ul.submenu {
 	display:block;
 }
@@ -154,12 +147,14 @@ input:focus::-webkit-input-placeholder { color:transparent; }
 	float:left;
 
 }
+/*отменяет стиль для плейсхолдера*/
 ::-webkit-input-placeholder {
 	color:#2c71b8;
 	text-indent: 19px;
 	text-transform: inherit;
 }
 
+/*Стиль для кнопки поиск*/
 .button{
 	border:1px solid #2c71b8;
 	margin-top: 4px;
@@ -173,6 +168,7 @@ input:focus::-webkit-input-placeholder { color:transparent; }
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
+/*стиль для блока корзины*/
 .basket{
 	position: relative;
 	display:block;
@@ -187,6 +183,7 @@ input:focus::-webkit-input-placeholder { color:transparent; }
 	width: 40px;
 	margin-top: 5px;
 }
+/*стиль кнопки(формы) корзины*/
 .basket input{
 	height: 40px;
 	width: 40px;
@@ -195,12 +192,12 @@ input:focus::-webkit-input-placeholder { color:transparent; }
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	border: none;
-
 }
+/*стиль для счета в корзине */
 .number{
 	position: absolute;
-	/*bottom:30px;
-	right:10px;*/
+	bottom:30px;
+	right:10px;
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
