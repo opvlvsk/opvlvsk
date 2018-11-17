@@ -10,6 +10,11 @@ body{
 	margin:0 auto;
 	max-height: 100px;
 }
+.container75{
+	width:900px;
+	margin:0 auto;
+	max-height: 100px;
+}
 [class*="col-"]{
 	float:left;
 }
@@ -216,7 +221,7 @@ ul.menu > li:hover > ul.submenu {
 	left:-10px;
 }
 /*слайдер*/
-.slaider{
+.slider{
 	height: 400px;
 }
 .breadcrumb{
@@ -259,11 +264,7 @@ margin-right: 15px;
 	border: 1px solid white;
 	background-color: #2c71b8;
 }
-.productblock{
-	position: absolute;
-	width: 900px;
-	height: 650px;
-}
+
 .productbox{
 	display: block;
 	float:left;
@@ -286,6 +287,7 @@ margin-right: 15px;
 	text-align: center;
 	margin:auto;
 }
+
 .zoom{
 	position: absolute;
 	right: 10px;
@@ -297,6 +299,10 @@ margin-right: 15px;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
+.zoom:hover {
+	background-image: url(images/zoomwhite.png);
+	background-color: #2c71b8;
+}
 .like{
 	position: absolute;
 	right: 10px;
@@ -307,6 +313,10 @@ margin-right: 15px;
 	border: 1px solid #2c71b8;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+}
+.like:hover {
+	background-image: url(images/likewhite.png);
+	background-color: #2c71b8;
 }
 .devicename{
 	height: 50px;
@@ -404,7 +414,51 @@ margin-right: 15px;
 }
 input {outline:none;} /*подсветка инпута*/
 input:focus::-webkit-input-placeholder { color:transparent; }
- 
+.filter {
+	padding-top:25px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	border-right: 1px solid white;
+	background-color: rgba(255,255,255,0.25);
 
+}
+.boxfilter-dt {
+	height: 95px;
+}
+.filtertitle{
+	color:white;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size:21px;
+}
+.filteroption{
+	padding-top: 20px;
+	color:white;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size:21px;
+}
+.filteroption  div{
+	padding-bottom: 25px;
+}
 
-
+/*input {
+	display:none;
+}
+label {
+	position:relative;
+}
+label:before{
+	content:"";
+	display:block;
+	width:8px;
+	height: 8px;
+	position: absolute;
+	border:1px solid white;
+	top:7px;
+	margin-right:10px;
+}
+input:checked +label:before{
+	background-color: white;
+}
+*/

@@ -64,23 +64,59 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div> <!-- закрылы роу  -->
+	</div><!--  закрыли контейнер -->
 	</header>
-	<div class="slaider">
+<!-- СЛАЙДЕР -->
+	<div class="slider">
 		<div class="container">
 			<div class="row">
 			
 			</div>
 		</div>
 	</div>	
+
 	<main>
-		<div class="container">
+		<div class="container"> <!-- контейнер -->
 			
 				<div class="col-md-3">
-					Device type
+				<div class="filter">
+					<div class="boxfilter-dt">
+					<div class="filtertitle"> DEVICE TYPE </div>
+					<div class="filteroption"> 
+						<style>
+						input {
+							/*	display:none;
+							*/}
+						label {
+								position:relative;
+							}
+						label:before{
+							content:"";
+							display:block;
+							width:10px;
+							height: 10px;
+							position: absolute;
+							border:1px solid white;
+						}
+						input:checked +label:before{
+							background-color: white;
+						}
+						</style>
+						<div>
+							<input type="checkbox" id="text">
+							<label for="text">&emsp;</label>Laptop
+						</div>
+						<div>
+							<input type="checkbox" id="text">
+							<label for="text">&emsp;</label>Tablet
+						</div>
+					
+					</div>
 				</div>
-				<div class="col-md-9">
+				</div> <!-- закрыли фильтр -->
+				</div> <!-- закрыли колонки 3 -->
+				<div class="col-md-9"> 
 					<div class="row">
 						<div class="breadcrumb">
 							<div><a href=>Home page</a></div>
@@ -93,14 +129,11 @@
 					<div class="titlesection">
 						Laptops and Tablets 
 					</div>
-					<div class="col-md-3">
-						<div class="boxsortby">
+					<div class="boxsortby">
 
-						</div>
-					</div>
-<div class="productblock">
+					</div>	<div class="row">
 <!-- ПРОДУКТ1 -->
-	<div class="productbox"> <!-- общий блок -->
+<div class="productbox"> <!-- общий блок -->
 					<!-- блок картинки -->
 						<div class="picturebox"> 
 							<div class="productpicture">
@@ -477,9 +510,10 @@
 								<button>ADD TO CART <img class="imagebasket"src="images/basketwhite.png"></button>
 							</div> 
 					</div> <!-- закрыли блок кнопок  -->
-	</div>
- --></div> <!-- закрыли блок продуктов три на три -->
+	</div> 
+ </div> <!-- закрыли тег роу -->
 </div> <!-- тег разметки колонки 9 75 процентов -->
+</div> <!-- закрыли контейнер всего мейна -->
 </main>
 </body>	
 </html>
