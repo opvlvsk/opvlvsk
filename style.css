@@ -21,6 +21,7 @@ body{
 .logo{
 	position:relative;
 	top:8px;
+	margin-left: 15px;
 }
 .col-md-3{
 	width:300px;
@@ -223,7 +224,56 @@ ul.menu > li:hover > ul.submenu {
 /*слайдер*/
 .slider{
 	height: 400px;
+	background: rgba(51, 102, 153, 0.25);
 }
+.sl_slaider{
+	position: relative;
+	width:100%;
+	height: 350px;
+}
+.sl_text{
+	width:100%;
+	position: absolute;
+	bottom:100px;
+	text-align: center;
+	font: MyriadProRegular;
+	font-size: 100px;
+	color:white;
+}
+.slick-dots li button{
+	border:2px solid white;
+	padding: 0px;
+	 width: 10px;
+ height: 10px;
+}
+.slick-dots li button:before{
+ content:" ";
+
+
+}
+.slick-dots li.slick-active button{
+	background-color: white;
+}
+.slick-prev, .slick-next{
+z-index: 1000;
+width: 25px;
+height: 50px;
+}
+
+.slick-prev {
+left:15px;
+}
+.slick-next{
+right:15px;
+}
+.slick-prev:before{
+	content:url(images/sl-arrow.png);
+
+}
+
+.slick-next:before {
+	content:url(images/sl-arrow-right.png);}
+
 .breadcrumb{
 margin-left: 15px; 
 }
@@ -454,7 +504,7 @@ select
 input {outline:none;} /*подсветка инпута*/
 input:focus::-webkit-input-placeholder { color:transparent; }
 .filter {
-	margin-left: 30px;
+	margin-left: 15px;
 	padding-bottom: 25px;
 	padding-left: 25px;
 	border-right: 1px solid white;
