@@ -248,8 +248,6 @@ ul.menu > li:hover > ul.submenu {
 }
 .slick-dots li button:before{
  content:" ";
-
-
 }
 .slick-dots li.slick-active button{
 	background-color: white;
@@ -385,7 +383,9 @@ select
 	background-image: url(images/zoomwhite.png);
 	background-color: #2c71b8;
 }
-.like{
+
+#like{
+	background-color: transparent;
 	position: absolute;
 	right: 10px;
 	top:50px;
@@ -396,10 +396,10 @@ select
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
-.like:hover {
+/*#like:hover {
 	background-image: url(images/likewhite.png);
 	background-color: #2c71b8;
-}
+}*/
 .devicename{
 	height: 50px;
 	color:white;
